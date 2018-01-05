@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { IncrementService } from './increment.service';
 
 @Component({
   selector: 'app-root',
@@ -6,16 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
-
-  count:number =0;
-  letsIncrementClick()
-  {
-    this.count++;
-  }
-
-  letsDecrementClick()
-  {
-    this.count++;
+  constructor(private  incService: IncrementService) { 
   }
 }

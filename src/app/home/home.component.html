@@ -1,0 +1,11 @@
+<p>
+  home works! Welcome {{user.name}}
+</p>
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Select Snacks
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" *ngFor="let snacks of snackArray; i as index">{{snacks}}</a>
+  </div>
+</div>
